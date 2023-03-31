@@ -1,0 +1,39 @@
+crear cuenta
+{
+    "clienteId": 1,
+    "numeroCuenta": "123456789",
+    "tipoCuenta": "Ahorro",
+    "saldoInicial": 1000.00,
+    "estado": "Activo"
+}
+movimientos
+[
+    {
+        "fecha": "2023-03-30",
+        "tipoMovimiento": "Retiro",
+        "valor": -575,
+        "saldo": 1425,
+        "cuenta_id": 1
+    },
+    {
+        "fecha": "2023-03-30",
+        "tipoMovimiento": "Depósito",
+        "valor": 600,
+        "saldo": 700,
+        "cuenta_id": 2
+    },
+    {
+        "fecha": "2023-03-30",
+        "tipoMovimiento": "Depósito",
+        "valor": 150,
+        "saldo": 150,
+        "cuenta_id": 3
+    },
+    {
+        "fecha": "2023-03-30",
+        "tipoMovimiento": "Retiro",
+        "valor": -540,
+        "saldo": 0,
+        "cuenta_id": 4
+    }
+]

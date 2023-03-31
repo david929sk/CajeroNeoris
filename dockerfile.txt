@@ -1,0 +1,12 @@
+# Utiliza una imagen de Maven como contenedor intermedio para compilar el proyecto
+FROM maven:3.8.1-jdk-17 AS build
+WORKDIR D:/David/workspace/CajeroNeoris
+COPY src /CajeroNeoris/src
+COPY pom.xml /CajeroNeoris
+RUN mvn -f /CajeroNeoris/pom.xml clean package
+
+# Utiliza una imagen de OpenJDK para ejecutar el binario (.jar)
+FROM openjdk:17-jdk-alpine
+COPY --from=build /CajeroNeoris/target/*.jar app.jar
+EXPOSE 8080
+ENTRYPOINT ["java","-jar","/CajeroNeoris.jar"]

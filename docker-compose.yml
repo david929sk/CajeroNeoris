@@ -1,0 +1,27 @@
+version: '3.8'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: dockerfile
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://localhost:3306/Mysql
+      SPRING_DATASOURCE_USERNAME: neoris
+      SPRING_DATASOURCE_PASSWORD: neoris
+  db:
+    image: mysql:8.0.26
+    restart: always
+    environment:
+      MYSQL_DATABASE: Mysql
+      MYSQL_USER: neoris
+      MYSQL_PASSWORD: neoris
+      MYSQL_ROOT_PASSWORD: 123456
+    volumes:
+      - db-data:/var/lib/mysql
+
+volumes:
+  db-data:
