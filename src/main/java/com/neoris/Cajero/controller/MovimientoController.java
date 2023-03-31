@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.neoris.Cajero.entity.Movimiento;
 import com.neoris.Cajero.service.MovimientoService;
-import com.neoris.entity.Movimiento;
 
 
 @RestController

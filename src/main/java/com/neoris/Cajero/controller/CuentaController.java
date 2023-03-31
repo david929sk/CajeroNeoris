@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.neoris.Cajero.entity.Cuenta;
 import com.neoris.Cajero.service.CuentaService;
-import com.neoris.entity.Cuenta;
 
 @RestController
 @RequestMapping("/cuentas")

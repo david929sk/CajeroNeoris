@@ -7,11 +7,11 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.neoris.Cajero.entity.Cuenta;
+import com.neoris.Cajero.entity.Reporte;
 import com.neoris.Cajero.repository.ClienteRepository;
 import com.neoris.Cajero.repository.CuentaRepository;
 import com.neoris.Cajero.repository.MovimientoRepository;
-import com.neoris.entity.Cuenta;
-import com.neoris.entity.Reporte;
 
 @Service
 public class ReporterService {

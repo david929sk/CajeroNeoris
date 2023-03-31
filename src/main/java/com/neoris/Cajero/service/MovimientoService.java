@@ -5,9 +5,9 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.neoris.Cajero.entity.Cuenta;
+import com.neoris.Cajero.entity.Movimiento;
 import com.neoris.Cajero.repository.MovimientoRepository;
-import com.neoris.entity.Cuenta;
-import com.neoris.entity.Movimiento;
 
 @Service
 public class MovimientoService {
@@ -28,8 +28,7 @@ public class MovimientoService {
 
 		Cuenta cuenta = cuentaservice.getCuentaById((long) movimiento.getCuenta_id());
 		if (cuenta != null) {
-			movimiento.setSaldo(cuenta.getSaldoInicial());
-			if ((movimiento.getSaldo() == 0 || cuenta.getSaldoInicial() + movimiento.getValor() >= 0 ) && movimiento.getTipoMovimiento().equals("débito")) {
+			if ((cuenta.getSaldoInicial() == 0 || cuenta.getSaldoInicial() + movimiento.getValor() >= 0 ) && movimiento.getTipoMovimiento().equals("débito")) {
 				throw new RuntimeException("Saldo no disponible");
 			}
 

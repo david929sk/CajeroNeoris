@@ -4,6 +4,7 @@ D:\David\workspace\CajeroNeoris\src\main\java\com\neoris\entity\Reporte.java
 D:\David\workspace\CajeroNeoris\src\main\java\com\neoris\Cajero\controller\ClienteController.java
 D:\David\workspace\CajeroNeoris\src\main\java\com\neoris\CajeroNeorisApplication.java
 D:\David\workspace\CajeroNeoris\src\main\java\com\neoris\entity\Persona.java
+D:\David\workspace\CajeroNeoris\src\main\java\com\neoris\Cajeo\exceptions\Exceptions.java
 D:\David\workspace\CajeroNeoris\src\main\java\com\neoris\Cajero\repository\CuentaRepository.java
 D:\David\workspace\CajeroNeoris\src\main\java\com\neoris\Cajero\service\ClienteService.java
 D:\David\workspace\CajeroNeoris\src\main\java\com\neoris\entity\Cuenta.java
@@ -15,3 +16,4 @@ D:\David\workspace\CajeroNeoris\src\main\java\com\neoris\Cajero\controller\Repor
 D:\David\workspace\CajeroNeoris\src\main\java\com\neoris\Cajero\service\CuentaService.java
 D:\David\workspace\CajeroNeoris\src\main\java\com\neoris\entity\Cliente.java
 D:\David\workspace\CajeroNeoris\src\main\java\com\neoris\Cajero\controller\CuentaController.java
+D:\David\workspace\CajeroNeoris\src\main\java\com\neoris\Cajeo\exceptions\ExceptionHandler.java

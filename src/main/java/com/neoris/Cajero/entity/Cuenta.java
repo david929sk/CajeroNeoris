@@ -1,4 +1,4 @@
-package com.neoris.entity;
+package com.neoris.Cajero.entity;
 
 import jakarta.persistence.*;
 import lombok.*;

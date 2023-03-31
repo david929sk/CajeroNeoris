@@ -3,8 +3,8 @@ package com.neoris.Cajero.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.neoris.Cajero.entity.Cliente;
 import com.neoris.Cajero.repository.ClienteRepository;
-import com.neoris.entity.Cliente;
 
 import java.util.List;
 
